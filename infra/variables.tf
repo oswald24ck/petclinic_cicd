@@ -1,7 +1,7 @@
 variable "project_name" {
   description = "Short name used to prefix/tag all resources."
   type        = string
-  default     = "petclinic"
+  default     = "petclinic_cicd"
 }
 
 variable "environment" {
@@ -141,7 +141,7 @@ variable "db_username" {
 variable "db_engine_version" {
   description = "Postgres engine version on RDS."
   type        = string
-  default     = "16.4"
+  default     = "16.14"
 }
 
 variable "db_instance_class" {
