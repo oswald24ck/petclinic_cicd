@@ -151,7 +151,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Set up JDK ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@b8e5c1979493a2072e17576f4d3b5b6307379d70 # v4.3.0
+        uses: actions/setup-java@776bab815ee57fefceca58c156ec5a7cf9f14f73 # v4.5.0
         with:
           java-version: ${{ env.JAVA_VERSION }}
           distribution: 'temurin'
@@ -181,7 +181,7 @@ jobs:
 
       - name: Upload Trivy results
         if: always()
-        uses: actions/upload-artifact@6592c7192af0f636511d6d86a587eb30372334b0 # v4.4.0
+        uses: actions/upload-artifact@c71983e3df62301659dac9d3d3a010d287178c52 # v4.5.0
         with:
           name: trivy-fs-report
           path: trivy-results.json
