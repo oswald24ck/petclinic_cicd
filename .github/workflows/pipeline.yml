@@ -185,6 +185,7 @@ jobs:
           name: trivy-fs-report
           path: trivy-results.*
           if-no-files-found: ignore
+          
 
   publish:
     name: Publish to JFrog Artifactory
